@@ -1,0 +1,51 @@
+/* Empty. Add your own CSS if you like */
+
+ion-content{
+	/*background-color: #F7F4EC;*/
+	color:#413D39;
+	/*background-color: red;*/
+}
+
+.item {
+	/*background-color: #F7F4EC;*/
+
+}
+
+.persona .item-content {
+	/*background-color: #F7F4EC;*/
+}
+
+.item.message{
+	color:#464137;
+	/*background-color: #F7F4EC;*/
+	border:none;
+	font-family: "Times New Roman", Georgia, Serif;
+}
+
+.item.message p{
+	white-space: pre-wrap;
+	padding-left: 5px;
+}
+
+.item.message .heading{
+	margin-bottom: 5px;
+	color: rgb(221, 123, 55);
+}
+
+.item.message .timestamp{
+	color: #A9A199;
+	font-size: .8em;
+}
+
+button.initials{
+  width:34px;
+  padding: 0px !important;
+}
+
+.item-image.initials{
+	background-color:rgb(137,189,242);
+	height: 40px;
+	line-height: 40px;
+	font-weight: bold;
+	color: white;
+}

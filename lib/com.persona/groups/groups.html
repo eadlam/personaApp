@@ -1,0 +1,20 @@
+<ion-view title="Groups">
+  <ion-nav-buttons side="left">
+    <button menu-toggle="left" class="button button-icon icon ion-navicon"></button>
+  </ion-nav-buttons>
+  <ion-nav-buttons side="right">
+    <button class="button button-icon icon ion-plus-round"
+            ng-click="go('app.new')"></button>
+  </ion-nav-buttons>
+  <ion-content class="has-header">
+    <ion-list>
+      <ion-item class="item-avatar persona" 
+                ng-repeat="group in groups" 
+                href="#/app/groups/{{$index}}">
+        <div class="item-image initials">{{group.initials()}}</div>
+        <h2>{{group.title}}</h2>
+        <p>{{group.preview.text}}</p>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
