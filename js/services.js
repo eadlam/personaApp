@@ -1,6 +1,6 @@
 // Service
 var module = angular.module('starter.services', [])
-module.factory('Menu', function(Group) {
+module.factory('Menu', function() {
 
     var state = {
       crumb:""

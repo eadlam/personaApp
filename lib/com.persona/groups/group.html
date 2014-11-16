@@ -1,16 +1,16 @@
 <ion-view title="{{group.title}}">
   <ion-nav-buttons side="right">
     <button menu-toggle="right" class="button initials">
-      {{state.persona.name.slice(0,2)}}
+      {{state.persona.initials}}
     </button>
   </ion-nav-buttons>
 
   <ion-content class="has-header has-footer">
-    <div class="list list-inset" style="margin-top:20px;" ng-repeat="message in messages">
+    <div class="list list-inset" style="margin-top:20px;" ng-repeat="message in group.messages">
 	  <div class="item item-text-wrap message">
 	  	<h4 class="heading">
-	  		{{message.author}} 
-	  		<span class="timestamp">{{message.timestamp | date : 'shortTime'}}</span>
+	  		{{message.author.name}} 
+	  		<span class="timestamp">{{message.created | date : 'shortTime'}}</span>
 	  	</h4>
 	  	<p>{{message.text}}</p>
 	    

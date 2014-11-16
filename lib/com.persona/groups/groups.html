@@ -10,10 +10,15 @@
     <ion-list>
       <ion-item class="item-avatar persona" 
                 ng-repeat="group in groups" 
-                href="#/app/groups/{{$index}}">
-        <div class="item-image initials">{{group.initials()}}</div>
-        <h2>{{group.title}}</h2>
-        <p>{{group.preview.text}}</p>
+                href="#/app/groups/{{group.id}}">
+        <div class="item-image initials">{{group.initials}}</div>
+        <h2>{{group.name}} 
+          <span class="timestamp" style="color:#aaa;font-size:.6em;">{{group.preview.created  | date : 'shortTime'}} </span></h2>
+        <p class="preview"> 
+            
+            <span class="heading">{{group.preview.author.name}}</span> 
+            {{group.preview.text}} 
+        </p>
       </ion-item>
     </ion-list>
   </ion-content>

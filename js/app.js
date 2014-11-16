@@ -10,7 +10,9 @@ angular.module('starter', [
   'starter.services', 
   'com.persona.groups',
   'com.persona.personas',
-  'com.persona.messages'
+  'com.persona.messages',
+  'com.persona.utils',
+  'ngResource'
   ])
 
 .run(function($ionicPlatform) {
